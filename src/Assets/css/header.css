@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+    height: 80px;
+    /* margin-bottom: 30px; */
+}
+
+header .logoHeader{
+    font-size: 50px;
+}
+
+header .iconsBox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .iconsBox .iconStyle{
+    font-size: 25px;
+}
+
+header .iconMode{
+    display: none;
+}
+
+header .iconMobile{
+    display: none;
+}

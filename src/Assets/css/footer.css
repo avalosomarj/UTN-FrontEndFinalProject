@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+    background: rgb(70, 70, 70);
+}
+
+footer .socialNetworks{
+    display: flex;
+    gap: 15px;
+    font-size: 40px;
+}

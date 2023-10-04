@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --primaryLightColor: rgb(174, 210, 255);
+    --primaryDarkColor: rgb(148, 0, 255);
+    --secondaryLightColor: rgb(228, 241, 255);
+    --secondaryDarkColor: rgb(39, 0, 93);
+    --terciaryColor: rgb(227, 246, 255);/* rgba(224, 255, 255, 0.5) */
+    --textPrimaryColor: black;
+    --textsecondaryColor: gray;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--primaryLightColor), var(--secondaryLightColor));
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+main p{
+    text-align: justify;
+}
+
+a, a:visited{
+    color: black;
+}
+
+.darkMode{
+    background: linear-gradient(to bottom, var(--primaryDarkColor), var(--secondaryDarkColor1));
+}
+
+.homePage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homePage .searchBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.homePage .searchBox input{
+    padding: 10px;
+    width: 80vw;
+    max-width: 350px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.173);
+}
+
+.homePage .searchBox .searchIcon{
+    font-size: 25px;
+    border-left: 1px solid lightgray;
+    padding-left: 5px;
+    right: 10px;
+    position: absolute;
+}
+
+.homePage .productList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0px;
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 200px; /* 15vw */
+    height: 250px;/* 25vh */
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Card img{
+    width: 100px;
+    /* max-width: 10%; */
+}
+
+.Card .btnDetail{
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.productDetailPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDetailPage .productDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 85vw;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--terciaryColor);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.productDetailPage .productDescription img{
+    width: 200px;
+    max-width: 25%;
+}
+
+.productDetailPage .productDescription p{
+    white-space: pre-wrap;
+}
+
+.contactPage{
+    display: flex;
+    align-items: center;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 85vw;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--terciaryColor);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contactForm .contactInput{
+    width: 100%;
+    max-width: 350px;
+}
+
+.contactForm .facesIcon{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#txtMessage{
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+    resize: none;
+}
+
+.contactForm .btnSubmit{
+    height: 35px;
+    width: 60px;
+}
+
+.CartInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    width: 85vw;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--terciaryColor);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.CartInfo .ProductList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+.CartInfo .ProductList .TrashIcon{
+    cursor: pointer;
+    color: darkred;
+}
