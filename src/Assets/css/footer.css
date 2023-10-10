@@ -2,12 +2,22 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
     padding: 5vh 5vw;
     background: rgb(70, 70, 70);
+}
+
+footer .Info p{
+    color: white;
 }
 
 footer .socialNetworks{
     display: flex;
     gap: 15px;
     font-size: 40px;
+}
+
+footer .socialNetworks .LinkedIn{
+    color: rgb(0, 119, 181);
 }

@@ -13,7 +13,7 @@ const PagesRouter = () => {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/detail/:id' element={<ProductDetail/>}/>
-            <Route path='*' element={<Error404 message={'La direccion ingresada no existe'}/>}/>
+            <Route path='*' element={<Error404 message={'La URL ingresada no existe'}/>}/>
         </Routes>
     </>
   )

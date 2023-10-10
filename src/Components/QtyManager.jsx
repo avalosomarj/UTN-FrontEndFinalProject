@@ -19,10 +19,10 @@ const QtyManager = ({id}) => {
     <div className='QtyManager'>
       <div className='ProductQty'>
         <span>Cantidad {qty}</span>
-        <button onClick={() => DelQty()} disabled = {qty == 1}>-</button>
-        <button onClick={() => AddQty()}>+</button>
+        <button className='btnGlobal' onClick={() => DelQty()} disabled = {qty == 1}>-</button>
+        <button className='btnGlobal' onClick={() => AddQty()}>+</button>
       </div>
-      <Link to={'/cart'}><button onClick={() => handleAddProduct(id, qty)}>Añadir al carrito</button></Link>
+      <Link to={'/cart'}><button className='btnGlobal' style={{width: '150px'}} onClick={() => handleAddProduct(id, qty)}>Añadir al carrito</button></Link>
     </div>
   )
 }

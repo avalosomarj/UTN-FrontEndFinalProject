@@ -2,7 +2,8 @@ import React, { createContext, useContext, useState } from 'react'
 import { dataBase } from '../Assets/data/DB'
 
 const GlobalContext = createContext()
-  const GlobalContextProvider = ({children}) => {
+
+const GlobalContextProvider = ({children}) => {
 
   const [cart, setCart] = useState([])
 
@@ -36,8 +37,6 @@ const GlobalContext = createContext()
     })
     return total
   }
-
-  console.log(cart)
 
   return (
     <GlobalContext.Provider value={{handleAddProduct, handleDeleteProduct, calcTotalCart, cart}}>

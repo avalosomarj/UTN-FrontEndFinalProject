@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import PagesRouter from './Router/PagesRouter'
 import { Footer, Header } from './Components'
 import './Assets/css/global.css'

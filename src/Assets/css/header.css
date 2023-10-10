@@ -1,14 +1,24 @@
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     padding: 0px 5vw;
+    margin-bottom: 20px;
     height: 80px;
-    /* margin-bottom: 30px; */
 }
 
 header .logoHeader{
     font-size: 50px;
+    animation: rainbow 1s linear infinite;
+}
+
+@keyframes rainbow{
+    0%, 100%{
+        color: var(--primaryDarkColor);
+    }
+    50%{
+        color: var(--secondaryDarkColor);
+    }
 }
 
 header .iconsBox{
@@ -22,9 +32,5 @@ header .iconsBox .iconStyle{
 }
 
 header .iconMode{
-    display: none;
-}
-
-header .iconMobile{
     display: none;
 }

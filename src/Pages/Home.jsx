@@ -19,7 +19,7 @@ const Home = ({id, name, price}) => {
   return (
     <div className='homePage'>
       <div className="searchBox">
-        <input name='searcher' type="text" placeholder='Busca tu producto aqui' value={searchString} onChange={handleFilterProduct}/>
+        <input name='searcher' type="text" placeholder='Busca tu producto aquí' value={searchString} onChange={handleFilterProduct}/>
         <TbShoppingBagSearch className='searchIcon'/>
       </div>
       
