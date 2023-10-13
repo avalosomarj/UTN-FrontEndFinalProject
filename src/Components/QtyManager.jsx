@@ -22,7 +22,7 @@ const QtyManager = ({id}) => {
         <button className='btnGlobal' onClick={() => DelQty()} disabled = {qty == 1}>-</button>
         <button className='btnGlobal' onClick={() => AddQty()}>+</button>
       </div>
-      <Link to={'/cart'}><button className='btnGlobal' style={{width: '150px'}} onClick={() => handleAddProduct(id, qty)}>Añadir al carrito</button></Link>
+      <Link to={'/cart'}><button className='btnGlobal' style={{width: '160px'}} onClick={() => handleAddProduct(id, qty)}>Añadir al carrito</button></Link>
     </div>
   )
 }

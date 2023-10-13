@@ -112,7 +112,7 @@ a, a:visited{
     width: 150px;
 }
 
-.Card h4{
+.Card span{
     width: 90%;
     text-align: center;
 }
@@ -171,7 +171,7 @@ a, a:visited{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 150px;
+    width: 170px;
 }
 
 .productDetailPage .QtyManager .ProductQty{
@@ -214,6 +214,7 @@ a, a:visited{
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -280,8 +281,8 @@ a, a:visited{
     flex-wrap: wrap;
     gap: 15px;
     padding: 15px;
-    min-width: 50%;
-    min-height: 10vh;
+    /* min-width: 50%; */
+    min-height: 250px;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -301,10 +302,15 @@ a, a:visited{
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    min-width: 200px;
+    max-width: 250px;
 }
 
-.CartInfo .ProductListCard .btnTash{
+.CartInfo .ProductListCard .ProductInCart h3{
+    height: 60px;
+    text-align: center;
+}
+
+.CartInfo .ProductListCard .ProductInCart .btnTash{
     display: flex;
     justify-content: center;
     align-items: center;

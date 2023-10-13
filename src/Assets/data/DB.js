@@ -77,7 +77,7 @@ El sistema de protección OPP realiza un monitoreo constante de la corriente y, 
     },
     {
         id: 7,
-        name: 'Disco Solido SSD 1tb M.2 Kingston Nvme',
+        name: 'Disco Solido Kingston SSD 1tb M.2 Nvme',
         img: '/img/07.webp',
         price: 37998,
         desc:
